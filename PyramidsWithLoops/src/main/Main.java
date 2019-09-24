@@ -15,11 +15,18 @@ public class Main {
 
 	public static void main(String[] args) {
 		int lines = 5;
-		for (int i = 1; i <= lines; i++) {
-			for (int j = 1; j <= i+i-1; j++) {
-				System.out.print(i);
-			}
-			System.out.println("");
+		int row = 1;
+
+		for (int i = lines; i > 0; i--) {
+		for (int j = 1; j <= i; j++) {
+		System.out.print(" ");
 		}
+		for (int j = 1; j <= row; j++) {
+		System.out.print(row + " ");
+		}
+		System.out.println();
+		row++;
+		}
+
 	}
 }
