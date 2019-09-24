@@ -18,14 +18,14 @@ public class Main {
 		int row = 1;
 
 		for (int i = lines; i > 0; i--) {
-		for (int j = 1; j <= i; j++) {
-		System.out.print(" ");
-		}
-		for (int j = 1; j <= row; j++) {
-		System.out.print(row + " ");
-		}
-		System.out.println();
-		row++;
+			for (int j = 1; j <= i; j++) {
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= row; j++) {
+				System.out.print(row + " ");
+			}
+			System.out.println();
+			row++;
 		}
 
 	}
