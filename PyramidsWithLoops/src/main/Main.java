@@ -14,15 +14,19 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		int lines = 5;
 		int row = 1;
 
 		for (int i = lines; i > 0; i--) {
-			for (int j = 1; j <= i; j++) {
+			for (int j = 2; j <= i; j++) {
 				System.out.print(" ");
 			}
+			for (int j = 2; j <= row; j++) {
+				System.out.print(row);
+			}
 			for (int j = 1; j <= row; j++) {
-				System.out.print(row + " ");
+				System.out.print(row);
 			}
 			System.out.println();
 			row++;
